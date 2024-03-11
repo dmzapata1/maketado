@@ -1,0 +1,55 @@
+/*Selector Universal*/
+/*Puede servir para quitar el estilo a todo*/
+
+* {
+    margin: 0;
+}
+
+
+/* Selector de etiqueta: afecta a todas las etiquetas*/
+h1 {
+    color: blue;
+    font-size: 80px;
+}
+
+p {
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
+
+
+/* Selector de Clase*/
+.parrafoAzul {
+    color: blue;
+    font-size: 30px;
+}
+
+/*Selector de ID */
+#parrafoVerde {
+    color: green;
+    font-size: 3
+}
+
+p {
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
+
+.negritas {
+    font-weight: bold;
+}
+
+
+.caja{
+    border: 10px dashed red;
+    padding: 20px;
+    /* margin: 25px; */
+    /* margin-top: 100px;
+    margin-bottom: 200px;
+    margin-left: 60px;
+    margin-right: 80px; */
+    margin: 20px 50px 100px 20px;
+    color: rgb(255,255,255);
+}
