@@ -1,0 +1,61 @@
+.caja {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.cajaRelative {
+    position: relative;
+    top: 0;
+    /* left: 0;
+    right: 0;
+    bottom:0; */
+}
+
+.cajaFixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    /* left: 0;
+    bottom:0; */
+}
+
+.cajaAbsolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* left: 0;
+    bottom:0; */
+}
+
+.padreRelativo {
+    width: 400px;
+    height: 500px;
+    border: 5px solid green;
+    position: relative;
+}
+
+.cajaAbsolute2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* left: 0;
+    bottom:0; */
+}
+
+
+.positionSticky{
+    position:sticky;
+    top:0;
+    background-color: blue;
+    z-index:2;
+}
+
+.parrafsticky {
+    color: green;
+}

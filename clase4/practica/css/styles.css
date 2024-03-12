@@ -1,0 +1,45 @@
+
+.caja {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+    border-radius: 50%;
+}
+
+.cajaRelative1 {
+    width: 300px;
+    height:300px;
+    position: relative;
+    top: 152px;
+    left: 283px;
+    /* left: 0;
+    right: 0;
+    bottom:0; */
+    background-color: blueviolet;
+    z-index: 10;
+}
+
+.cajaRelative2 {
+    width: 150px;
+    height:200px;
+    position: relative;
+    top: -232px;
+    left: 265px;
+    z-index: 154;
+    /* left: 0;
+    bottom:0; */
+    background-color: yellow;
+}
+
+
+.cajaRelative3 {
+    width: 165px;
+    height:190px;
+    position: relative;
+    top: -416px;
+    left: 431px;
+    z-index: 3;
+    /* left: 0;
+    bottom:0; */
+    background-color: green;
+}

@@ -1,0 +1,296 @@
+/* p {
+    color:blue
+}
+
+div p {
+    color: red;
+}
+
+div p.secondParagraph {
+    color: green;
+} */
+
+
+section {
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+    margin: 20px;
+}
+
+section#selectorHijo p {
+    color: red;
+}
+
+#selectorHijoDirecto article > p {
+    color: orange
+}
+
+#selectorHermanoGeneral article span ~ button {
+    background-color: black;
+    color: white
+}
+
+/*Selector Hermano Adyacente*/
+
+#selectorHermanoAdyacente article h3 + h4 {
+    text-decoration: underline;
+    font-size: 20px;
+    color: brown;
+}
+
+/****************************************
+*****PSEUDO SELECTORES*******************
+****************************************/
+
+/*Selector de Atributo*/
+
+a[href = "https://wwww.google.com"]{
+    font-size: 50px;
+    color: green;
+}
+
+input[type="password"] {
+    padding:20px
+}
+
+/* Animaciones y Transiciones */
+
+.buttonHover {
+    background-color: #4668a8;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color linear 300ms, color linear 300ms, border linear 300ms ;
+}
+
+.buttonHover:hover {
+    background-color: white ;
+    color: #4668a8;
+    border: 1px solid #4668a8;
+}
+
+.imagen {
+    width: 250px;
+    height: 250px;
+}
+
+.imagen:hover {
+    filter: sepia(0.5);
+}
+
+#visitedLinks a:visited {
+    color: red;
+}
+
+#visitedLinks a:active {
+    color: green;
+}
+
+
+#listaCajas .caja {
+    width: 40px;
+    height: 40px;
+    background-color: red ;
+    color: white;
+    margin: 10px;
+}
+
+#listaCajas div:first-child {
+    background-color: green;
+}
+
+#listaCajas div:last-child {
+    background-color: purple;
+}
+
+
+#listaCajas div.caja:nth-child(3) {
+    background-color: pink;
+    color: blue
+}
+
+#listaCajas div.caja:nth-last-child(2) {
+    background-color: pink;
+    color: blue
+}
+
+
+#listaCajas div.caja:nth-child(3) {
+    background-color: pink;
+    color: blue
+}
+
+
+#listaCajas2 .caja {
+    width: 40px;
+    height: 40px;
+    background-color: red ;
+    color: white;
+    margin: 10px;
+}
+
+
+#listaCajas2 div.caja:nth-child(even) {
+    background-color: brown;
+    color: white
+}
+
+
+#listaCajas3 .caja {
+    width: 40px;
+    height: 40px;
+    background-color: red ;
+    color: white;
+    margin: 10px;
+}
+
+
+#listaCajas3 div.caja:nth-child(odd) {
+    background-color: purple;
+    color: white
+}
+
+
+
+#listaCajas4 .caja {
+    width: 40px;
+    height: 40px;
+    background-color: beige ;
+    margin: 10px;  
+}
+
+
+#listaCajas4 div.caja:nth-child(3n) {
+    background-color: orchid;
+    color: brown
+}
+
+
+/* ESTILOS DEL PERFIL */
+
+.bodyPerfil {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.encabezado {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding:20px;
+}
+
+main {
+    width: 400px;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+}
+
+.avatar:hover {
+    filter: sepia(0.5);
+}
+
+.article {
+    text-align: center;
+}
+
+
+ul.redesSociales {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    margin: 0;
+}
+
+
+.icon:hover {
+    filter: sepia(0.5);
+}
+
+.redesSociales > li > a > img {
+    width: 30px; /* Reducir el tamaño de las imágenes al 30% */
+}
+
+
+/* Estilo para las imágenes cuando no se está haciendo hover */
+.avatar, .icon {
+    transition: transform 0.3s ease;
+}
+
+/* Estilo para las imágenes cuando se está haciendo hover */
+.avatar:hover, .icon:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+}
+
+img {
+    width: 150px;
+    transition: all ease 2s;
+}
+
+img:hover {
+    filter: saturate(5);
+    transform: scale(1.1)
+}
+
+
+/* Crear animacion */
+
+.caja {
+    width: 150px;
+    height: 140px;
+    background-color: red;
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+    border-radius: 50%;
+}
+
+/* Paso dos implementar la animacion */
+
+.animaciones .caja {
+    animation:cambiar-color 2s infinite alternate
+}
+
+/* Aqui se crea la animacion */
+@keyframes cambiar-color {
+    0% {background-color: red;
+    }
+    50% {
+        background-color: blue;
+    } 
+    100% {
+        background-color: red;
+    }
+}
+
+.animaciones2 .caja {
+    animation: mover-caja 500ms infinite alternate-reverse
+}
+
+@keyframes mover-caja {
+    0% {
+        transform: translateX(0);
+        background-color: green;
+    }
+    50% {
+        transform: translateX(200px);
+        border-radius:0;
+        background-color: yellow;
+    }
+    100% {
+        transform: translateX(0);
+        border-radius: 50%;
+        background-color: red;
+    }
+    
+}
+
+    
+}
