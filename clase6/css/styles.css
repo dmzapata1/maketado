@@ -26,8 +26,68 @@ body {
     font-size: 20px;
     border-radius: 10px;
     margin: 10px 0;
+    line-height: 80px; /* Altura igual a la altura de la caja */
 }
-
+/* flexbox */
 .containerFlex {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+} 
+
+.axis {
+    z-index:20;
 }
+
+
+/* .cross-axis {
+    left:50%;
+    transform: translateY(0%);
+    width:5px;
+    height:100%;
+    background-color: blue;
+}
+
+.main-axis {
+    top:50%;
+    transform: translateX(0%);
+    height:5px;
+    width:100%;
+    background-color: red;
+}    */
+
+.container::before,
+.container::after {
+    content: '';
+    position: absolute;
+    background-color: blue; /* Color del eje vertical */
+}
+
+.container::before {
+    top: 0;
+    bottom: 0;
+    width: 5px; /* Ancho del eje vertical */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container::after {
+    left: 0;
+    right: 0;
+    height: 5px; /* Altura del eje horizontal */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: red; /* Color del eje horizontal */
+}
+
+
+
+
+.containerFlexCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
