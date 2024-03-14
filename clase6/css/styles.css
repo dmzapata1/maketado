@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 80%;
+    min-height: 600px;
+    margin: 20px auto;
+    border: 10px solid #000;
+    position: relative;
+}
+
+.cajaRoja {
+    width: 100px;
+    height: 100px;
+    background-color:#fb7185;
+    color: #f1f5f9;
+    text-align: center;
+    border: 10px solid #e11d48;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.containerFlex {
+    display: flex;
+}
