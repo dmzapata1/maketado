@@ -1,0 +1,57 @@
+main 
+{
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    @include flexColumnCenter(column, center);
+    border:1px solid #333;
+    width: 900px;
+
+    .perfil 
+    {
+        width: 700px;
+        height: 350px;
+        text-align: center;
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 10px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            &:hover{
+                color: red;
+                transition: 1s;
+                transform: scale(2);
+            }
+        }
+        h2 {
+            margin: 0;
+            font-size: 24px;
+            color:#333
+        }
+        p {
+            margin: 0;
+            font-size: 18px;
+            color:#333
+        }
+        .redesSociales {
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            @include flexColumnCenter(row, space-between);
+            list-style: none;
+            .icon   {
+                width: 40px;
+                height: 40px;
+                &:hover{
+                    color: red;
+                    transition: 0.5s;
+                    transform: scale(1.3);
+                }
+            }
+
+        }
+    }
+}

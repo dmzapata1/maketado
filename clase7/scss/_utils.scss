@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.fondo {
+    background-color:$colorDeFondoSeccion;
+    height: 150px;
+    width: 300px;
+    margin: 50px;    
+}
+
+.fondo2 {
+    background-color:$colorDeFondoSeccion;
+    height: 150px;
+    width: 300px;
+    margin: 300px;    
+}
+
+
+header {
+    h1 {
+        font-size: 50px;
+        color: red;
+    }
+}
+
+body {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
+    @include flexColumnCenter(column,center);
+}
+
